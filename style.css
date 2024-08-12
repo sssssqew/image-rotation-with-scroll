@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+.scrollable{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+}
+.image-item{ /* container 요소의 중앙에 위치 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    /* border: 1px solid blue; */
+    /* background-color: #fff; */
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transform-style: preserve-3d;
+}
